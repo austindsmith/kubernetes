@@ -18,6 +18,8 @@ https://cloudnative-pg.io/
 
 https://docs.ansible.com/projects/ansible/latest/collections/kubernetes/core/k8s_module.html
 
+https://github.com/apache/airflow/blob/main/chart/values.yaml
+
 ## Notes
 
 For Longhorn, need to run `open-iscsi.yml` on the server.

@@ -1,0 +1,8 @@
+airflow:
+defaultUser:
+  role: Admin
+  username: austin
+  email: admin@example.com
+  firstName: admin
+  lastName: user
+  password: admin
