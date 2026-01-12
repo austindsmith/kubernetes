@@ -1,0 +1,19 @@
+# argocd/applications/nginx.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yourusername/k8s-homelab
+    targetRevision: main
+    path: apps/nginx  # Specific path only
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true      # Delete resources not in git
+      selfHeal: true   # Auto-fix drift
